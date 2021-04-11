@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="atividade.css">
+    <title>primeira atividade</title>
+</head>
+
+
+<body>
+    <main>
+        <h1>texto q vai mudar de cor</h1>
+
+        <input id="botao-background" type="button" value="muda o background" onclick="mudaCorBackground()">
+
+        <input id="botao-texto" type="button" value="muda o texto" onclick="mudaCorTexto()">
+
+
+
+        <script>
+            const texto = document.getElementsByTagName('h1')[0];
+
+            function mudaCorBackground() {
+                if (document.body.style.backgroundColor == 'blue') {
+                    return document.body.style.backgroundColor = 'white';
+                }
+                document.body.style.backgroundColor = 'blue';
+
+            }
+
+            function mudaCorTexto() {
+                if (texto.style.color == 'red') {
+                    return texto.style.color = 'black';
+                }
+                return texto.style.color = 'red';
+
+            }
+        </script>
+    </main>
+</body>

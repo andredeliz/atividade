@@ -21,19 +21,21 @@
         <script>
             const texto = document.getElementsByTagName('h1')[0];
 
+            function corAleatoria(opacidade = 1) {
+                let r = parseInt(Math.random() * 255);
+                let g = parseInt(Math.random() * 255);
+                let b = parseInt(Math.random() * 255);
+
+                return `rgba(${r},${g},${b},${opacidade})`;
+            }
+
             function mudaCorBackground() {
-                if (document.body.style.backgroundColor == 'blue') {
-                    return document.body.style.backgroundColor = 'white';
-                }
-                document.body.style.backgroundColor = 'blue';
+                return document.body.style.backgroundColor = corAleatoria();
 
             }
 
             function mudaCorTexto() {
-                if (texto.style.color == 'red') {
-                    return texto.style.color = 'black';
-                }
-                return texto.style.color = 'red';
+                return texto.style.color = corAleatoria();
 
             }
         </script>

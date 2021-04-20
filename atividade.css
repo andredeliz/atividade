@@ -1,4 +1,14 @@
+header h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px;
+}
 main {
     text-align: center;
-    margin: 350px auto;
+    margin: 350px 0 200px 0;
+}
+
+footer{
+    text-align: right;
+    padding: 40px 0;
 }

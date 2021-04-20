@@ -9,8 +9,12 @@
 
 
 <body>
+    <header>
+        <h1>Atividade referente a mudança de cor no texto</h1>
+
+    </header>
     <main>
-        <h1>texto q vai mudar de cor</h1>
+        <p style="font-size: 30px;">texto q vai mudar de cor</p>
 
         <input id="botao-background" type="button" value="muda o background" onclick="mudaCorBackground()">
 
@@ -19,7 +23,7 @@
 
 
         <script>
-            const texto = document.getElementsByTagName('h1')[0];
+            const texto = document.getElementsByTagName('p')[0];
 
             function corAleatoria(opacidade = 1) {
                 let r = parseInt(Math.random() * 255);
@@ -40,4 +44,10 @@
             }
         </script>
     </main>
+    <footer>
+        <p> Endereço: qualquer coisa</p>
+        <p> Bairro: qualquer coisa</p>
+        <p> Cidade/Estado: cidade/estado</p>
+        <p> CNPJ: 10.000.0001/02</p>
+    </footer>
 </body>
